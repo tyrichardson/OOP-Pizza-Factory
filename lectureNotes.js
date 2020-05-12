@@ -41,7 +41,7 @@ class Animal {
         this.isAlive = true;
         this.color = color;
         this.weight = weight;
-        this.noise = noise;        
+        this.noise = noise;
     }
 
     makeNoise() {
@@ -57,11 +57,11 @@ class Bird extends Animal {
         // super calls the constructor on the parent class
         // we can optionally send values up to the constructor method
         super(color);
-        
+
         // could also override Animal.weight here
         this.weight = weight;
 
-        // define bird properties        
+        // define bird properties
         this.inFlight = false;
         this.hasFeathers = true;
     }
@@ -70,7 +70,7 @@ class Bird extends Animal {
     // override of a parent's method definition
     makeNoise() {
         console.log(super.makeNoise());
-        // return `${this.noise} is the bird noise`;        
+        // return `${this.noise} is the bird noise`;
     }
 }
 
@@ -84,3 +84,4 @@ let defaultBird = new Bird('pink');
 
 // Bird inherits from Animal and so has the makeNoise method
 console.log(defaultBird.makeNoise());
+
